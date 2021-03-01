@@ -9,6 +9,11 @@ registerApplication({
   activeWhen: "/",
 });
 
+registerApplication({
+  name: "@fms/mfe-main",
+  app: () => System.import("@fms/mfe-main"),
+  activeWhen: "/main",
+});
 
 
 start({
